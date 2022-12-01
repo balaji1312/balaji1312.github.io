@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: Selected publications
+title: Publications
 description:
 years: [2020]
 nav: true
