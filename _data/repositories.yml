@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - balaji1312
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - balaji1312/cassnat_asr_public
+  - balaji1312/noisy-asr
+  - balaji1312/NNDL-proj
+  - balaji1312/compressed-online-classifier
