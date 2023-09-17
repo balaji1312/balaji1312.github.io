@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data Compression using Online Linear Classifier
-description: Project for ECE 236 Fall 2021
+description: Project for ECE 236A Fall 2021
 img: 
 importance: 3
 category: course
