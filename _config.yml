@@ -6,6 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Natarajan
 middle_name: Balaji
 last_name: Shankar
+
 email: balaji1312@ucla.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   
@@ -235,6 +236,9 @@ scholar:
 
   last_name: Shankar
   first_name: Natarajan B.
+
+  last_name_2: Balaji Shankar
+  first_name_2: Natarajan
 
   style: apa
   locale: en
