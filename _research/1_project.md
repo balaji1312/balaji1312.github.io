@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hedging in fractional Black–Scholes model with transaction costs
+title: An Equitable Framework for Automatically Assessing Children's Oral Narrative Language Abilities
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
 importance: 1
