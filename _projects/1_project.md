@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Noise Robust Automatic Speech Recognition
-description: Project for ECE M214A Spring 2022
+description: Project for ECE 214A Spring 2022
 img: 
-importance: 1
+importance: 3
 category: course
 ---
 

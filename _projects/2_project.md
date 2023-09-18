@@ -3,7 +3,7 @@ layout: page
 title: Comparison of Different Facial ROI for Remote Photoplethysmography
 description: Project for ECE 239AS Winter 2022
 img: 
-importance: 2
+importance: 6
 category: course
 ---
 
