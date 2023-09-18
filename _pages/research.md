@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
-description: Mix of random course and lab projects collected over the years
+title: Research
+permalink: /research/
+description: Mix of random lab projects collected over the years
 nav: true
 nav_order: 2
 display_categories: [lab, course]

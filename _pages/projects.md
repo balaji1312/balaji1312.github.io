@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Mix of random course and lab projects collected over the years
+description: Mix of random course projects collected over the years
 nav: true
 nav_order: 3
 display_categories: [lab, course]
