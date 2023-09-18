@@ -3,8 +3,10 @@ github_users:
 
 github_repos:
   - balaji1312/cassnat_asr_public
+  - balaji1312/CORAAL-QA
   - balaji1312/noisy-asr
+  - balaji1312/adv-speech-processing
   - balaji1312/NNDL-proj
   - balaji1312/compressed-online-classifier
-  - balaji1312/CORAAL-QA
-
+  - balaji1312/gene-compression
+  - balaji1312/large-scale-data-mining
