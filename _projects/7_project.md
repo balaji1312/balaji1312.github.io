@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EEG data CLassification
+title: EEG data classification
 description: Project for ECE 247 Winter 2022
 img: 
 importance: 5
