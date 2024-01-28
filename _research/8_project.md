@@ -1,6 +1,6 @@
 ---
 layout: page
-title: W2V-SOA - Reducing domain mismatch in Wav2vec2.0 by speech only adaptation for low resource ASR
+title: SOA - REDUCING DOMAIN MISMATCH IN SSL PIPELINE BY SPEECH ONLY ADAPTATION FOR LOW RESOURCE ASR
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
 importance: 4

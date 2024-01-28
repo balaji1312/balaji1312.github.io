@@ -3,7 +3,7 @@ layout: page
 title: Automatic Separation of Vocal and Non-Vocal Segments Present in South Indian Songs  
 description: Work with Pattern Recognition and Computational Intelligence Laboratory at NIT Trichy
 img: 
-importance: 8
+importance: 9
 category: lab
 ---
 
