@@ -42,7 +42,7 @@
             {%- assign author_is_self = false -%}
             {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
             {%- assign author_first_name = author.first | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
-            {%- if site.scholar.first_name contains author_first_name  or site.scholar.first_name_2 contains author_first_name-%}
+            {%- if site.scholar.first_name contains author_first_name  or site.scholar.first_name_2 contains author_first_name or site.scholar.first_name_3 contains author_first_name-%}
                 {%- assign author_is_self = true -%}
             {%- endif -%}
             {%- assign coauthor_url = nil -%}
