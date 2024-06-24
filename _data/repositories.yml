@@ -3,6 +3,7 @@ github_users:
 
 github_repos:
   - balaji1312/cassnat_asr
+  - balaji1312/SPAPL_KidsASR
   - balaji1312/CORAAL-QA
   - balaji1312/noisy-asr
   - balaji1312/adv-speech-processing
@@ -10,4 +11,3 @@ github_repos:
   - balaji1312/compressed-online-classifier
   - balaji1312/gene-compression
   - balaji1312/large-scale-data-mining
-  - balaji1312/SPAPL_KidsASR
