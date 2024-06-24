@@ -13,4 +13,4 @@ This project presents a novel dataset (CORAAL QA) and framework for audio questi
 Our database can be accessed <a href="https://github.com/balaji1312/CORAAL-QA"> here</a>
 
 
-This work was presented at ICASSP 2024, and can be accessed <a href
+This work was presented at ICASSP 2024, and can be accessed <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10447109"> here</a>
