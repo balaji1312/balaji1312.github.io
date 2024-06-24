@@ -1,9 +1,9 @@
 ---
 layout: page
-title: A hybrid feature preservation technique based on luminosity and edge based contrast enhancement in color fundus images 
+title: Contrast Enhancement in Color Fundus Images 
 description: Work with Signal and Image Processing Laboratory at NIT Trichy
 img: 
-importance: 7
+importance: 6
 category: lab
 ---
 
