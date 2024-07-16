@@ -28,5 +28,5 @@ This work was published in The Journal of Black Excellence in Engineering, Scien
 An extension to this work presents a novel framework for the automated prediction of item difficulty and response time within educational assessments. Utilizing data from the BEA 2024 Shared Task, we integrate Named Entity Recognition, Semantic Role Labeling, and linguistic features to prompt a Large Language Model (LLM). Our best approach achieves an RMSE of 0.308 for item difficulty and 27.474 for response time prediction, improving on the provided baseline. The framework’s adaptability is demonstrated on audio recordings of 3rd-8th graders from the Atlanta, Georgia area responding to the Test of Narrative Language. These results highlight the framework’s potential to enhance test development efficiency.
 
 
-This extension was presented at the Nineteenth Workshop on Innovative Use of NLP for Building Educational Applications as part of NAACL 2024, and can be accessed <a href="https://www.seas.ucla.edu/spapl/paper/Hari_NAACL_2024.pdf"> here</a>
+This extension was presented at the Nineteenth Workshop on Innovative Use of NLP for Building Educational Applications as part of NAACL 2024, and can be accessed <a href="https://aclanthology.org/2024.bea-1.49/"> here</a>
 

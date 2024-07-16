@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! 'm a Ph.D. student in the Electrical and Computer Engineering department at UCLA, currently conducting my research at the Speech Processing and Auditory Perception Laboratory. 
+Hi! I'm a Ph.D. student in the Electrical and Computer Engineering department at UCLA, currently conducting my research at the Speech Processing and Auditory Perception Laboratory. 
 
 My research passion lies at the intersection of machine learning and speech processing, with a focus on developing robust automatic speech recognition (ASR) systems for low-resource domains, such as children's speech and African-American English. Under the guidance of Dr. Abeer Alwan, I've pioneered novel techniques for automatic scoring of child reading assessments, automatic dialect density estimation, and non-autoregressive transformer-based ASR systems. My ongoing work centers on enhancing ASR models for limited data scenarios, exploring new architectures and feature extraction techniques, and building unbiased spoken language assessment systems. I'm particularly interested in developing adaptation strategies for untranscribed speech, adapting existing speech foundation models for new data, and identifying and addressing biases in large language models (LLMs) used in educational applications. Additionally, I'm committed to creating equitable end-to-end question-answering models specifically designed for children's speech.
 
