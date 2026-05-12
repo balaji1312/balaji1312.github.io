@@ -3,7 +3,7 @@ layout: page
 title: Automatically Assessing Children's Oral Narrative Language Abilities
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
-importance: 3
+importance: 5
 category: lab
 ---
 
@@ -29,4 +29,10 @@ An extension to this work presents a novel framework for the automated predictio
 
 
 This extension was presented at the Nineteenth Workshop on Innovative Use of NLP for Building Educational Applications as part of NAACL 2024, and can be accessed <a href="https://aclanthology.org/2024.bea-1.49/"> here</a>
+
+
+A further extension presents an end-to-end pipeline that pairs ASR transcription of student responses with LLM-based scoring and feedback generation. Rather than predicting only a numeric score, the pipeline returns both a rubric-aligned grade and short qualitative feedback explaining which aspects of the response contributed to it, supporting potential classroom use as a diagnostic tool. We evaluate prompt designs, scoring rubrics, and ASR error sensitivity on children's responses to a portion of the Test of Narrative Language, and show that the LLM-driven pipeline approaches human-level scoring agreement while remaining interpretable.
+
+
+This extension was presented at SLaTE 2025, and can be accessed <a href="https://doi.org/10.21437/SLaTE.2025-1"> here</a>
 

@@ -1,0 +1,55 @@
+<script>
+(function () {
+  var TTL = 60 * 60 * 1000; // cache GitHub API responses for 1 hour
+  var cards = document.querySelectorAll('.repo-card');
+
+  function formatNum(n) {
+    if (n == null) return '—';
+    if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+    return String(n);
+  }
+
+  function render(card, d) {
+    if (d.description) {
+      card.querySelector('.repo-description').textContent = d.description;
+    }
+    card.querySelector('.repo-stars-count').textContent = formatNum(d.stargazers_count);
+    card.querySelector('.repo-forks-count').textContent = formatNum(d.forks_count);
+    if (d.language) {
+      card.querySelector('.repo-lang').textContent = d.language;
+    }
+  }
+
+  cards.forEach(function (card) {
+    var owner = card.dataset.owner;
+    var repo = card.dataset.repo;
+    var key = 'repo-cache:' + owner + '/' + repo;
+
+    try {
+      var raw = localStorage.getItem(key);
+      if (raw) {
+        var obj = JSON.parse(raw);
+        if (Date.now() - obj.t < TTL) {
+          render(card, obj.d);
+          return;
+        }
+      }
+    } catch (e) { /* ignore storage errors */ }
+
+    fetch('https://api.github.com/repos/' + owner + '/' + repo)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data) return;
+        var d = {
+          description: data.description,
+          stargazers_count: data.stargazers_count,
+          forks_count: data.forks_count,
+          language: data.language
+        };
+        try { localStorage.setItem(key, JSON.stringify({ t: Date.now(), d: d })); } catch (e) {}
+        render(card, d);
+      })
+      .catch(function () { /* leave static fallback */ });
+  });
+})();
+</script>

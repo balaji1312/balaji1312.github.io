@@ -9,7 +9,7 @@ last_name: Shankar
 
 email: balaji1312@ucla.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  
+  Personal site of Natarajan Balaji Shankar — Ph.D. candidate in Electrical and Computer Engineering at UCLA, working on speech processing and machine learning at the Speech Processing and Auditory Perception Laboratory.
 footer_text: >
   
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -60,9 +60,9 @@ max_width: 800px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://balaji1312.github.io/assets/img/website_pic.jpeg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration

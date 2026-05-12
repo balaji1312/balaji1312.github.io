@@ -3,7 +3,7 @@ layout: page
 title: Improving ASR for Child Speech
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
-importance: 2
+importance: 6
 category: lab
 ---
 
@@ -20,3 +20,15 @@ Our code can be accessed <a href="https://github.com/balaji1312/SPAPL_KidsASR"> 
 
 
 This work was presented at Interspeech 2024, and can be accessed <a href="https://arxiv.org/abs/2406.10507"> here</a>
+
+
+A follow-up study examines how self-supervised speech representations shift across speaker age and how that shift drives ASR degradation on child speech. We introduce Delta SSL embeddings, frame-level differences between SSL representations of an utterance and a reference, and show that incorporating these delta features into ASR training improves robustness on children's speech without retraining the underlying foundation model — a practical recipe when target-domain labeled data is scarce.
+
+
+This work has been accepted at ICASSP 2026.
+
+
+A collaborative effort with the ESPnet community provides a systematic benchmark of training paradigms, dataset compositions, and model scaling for child ASR within the ESPnet toolkit. The study covers supervised vs. self-supervised pretraining, multi-corpus mixing strategies, and parameter scaling across model sizes, providing reproducible recipes and baselines that the broader community can build on for child ASR research.
+
+
+This work was presented at WOCCI 2025.

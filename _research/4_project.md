@@ -3,7 +3,7 @@ layout: page
 title: Separation of Musical Vocal and Non-Vocal Segments  
 description: Work with Pattern Recognition and Computational Intelligence Laboratory at NIT Trichy
 img: 
-importance: 7
+importance: 11
 category: lab
 ---
 

@@ -322,7 +322,68 @@ footer.sticky-bottom {
 
 @media (min-width: 768px) {
   .repo {
+    flex: 0 0 50%;
     max-width: 50%;
+  }
+}
+
+.repo-card {
+  display: block;
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+    color: var(--global-text-color);
+  }
+
+  .repo-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+
+    .repo-icon {
+      color: var(--global-text-color-light);
+      margin-right: 0.5rem;
+    }
+
+    .repo-name {
+      font-weight: 600;
+      color: var(--global-theme-color);
+      word-break: break-all;
+    }
+
+    .repo-owner {
+      font-weight: 400;
+      color: var(--global-text-color-light);
+    }
+  }
+
+  .repo-description {
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    min-height: 1.25em;
+  }
+
+  .repo-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+
+    > span:empty {
+      display: none;
+    }
   }
 }
 
