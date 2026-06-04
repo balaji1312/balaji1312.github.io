@@ -3,7 +3,7 @@ layout: page
 title: Dialect Density Estimation for African American English
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
-importance: 9
+importance: 10
 category: lab
 ---
 

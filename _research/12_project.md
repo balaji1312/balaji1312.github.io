@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Addressing Bias in Automated Child Language Assessment
+title: Age-Agnostic Speaker Verification for Children and Adults
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
-importance: 4
+importance: 7
 category: lab
 ---
 
-Spoken language systems deployed in automated child language-based assessments can encode and amplify biases against children from underrepresented demographic groups, particularly along axes of dialect, race, and socioeconomic background. This work synthesizes evidence from across the assessment pipeline — from speech data collection and ASR model training to downstream scoring with language models — and traces how design choices at each stage produce disparate outcomes for children who speak varieties such as African American English. We propose evaluation protocols that explicitly measure performance gaps across demographic subgroups rather than reporting only aggregate accuracy, and discuss data, modeling, and deployment-time mitigation strategies for building equitable assessment systems suitable for use in real classrooms.
+Speaker verification (SV) systems trained on adult speech perform poorly when applied to children, because the acoustic mismatch between children's and adults' speech degrades verification accuracy on children's speaker verification (C-SV). Domain adaptation can recover some of this performance, but it typically does so at the cost of a significant drop on adults' speaker verification (A-SV) — trading one population for the other. This work proposes an Age-Agnostic Speaker Verification (AASV) system that is robust across both C-SV and A-SV. The approach uses a domain classifier to disentangle age-related attributes from speech, then expands the embedding space using the extracted domain information to form a unified speaker representation that stays highly discriminative across age groups. Experiments on the OGI and VoxCeleb datasets show that AASV bridges the verification performance gap between children and adults, laying the foundation for inclusive and age-adaptive speaker verification systems.
 
 
-This work was published in the Journal of Educational Measurement, and can be accessed <a href="https://doi.org/10.1111/jedm.12435"> here</a>
+This work was presented at WOCCI 2025, and can be accessed <a href="https://www.isca-archive.org/wocci_2025/zheng25_wocci.html"> here</a>

@@ -3,7 +3,7 @@ layout: page
 title: Automatically Assessing Children's Oral Narrative Language Abilities
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
-importance: 5
+importance: 4
 category: lab
 ---
 
@@ -35,4 +35,10 @@ A further extension presents an end-to-end pipeline that pairs ASR transcription
 
 
 This extension was presented at SLaTE 2025, and can be accessed <a href="https://doi.org/10.21437/SLaTE.2025-1"> here</a>
+
+
+Running through all of this work is a concern for fairness, which a related effort addresses directly. Spoken language systems deployed in automated child language-based assessments can encode and amplify biases against children from underrepresented demographic groups, particularly along axes of dialect, race, and socioeconomic background. This work synthesizes evidence from across the assessment pipeline — from speech data collection and ASR model training to downstream scoring with language models — and traces how design choices at each stage produce disparate outcomes for children who speak varieties such as African American English. We propose evaluation protocols that explicitly measure performance gaps across demographic subgroups rather than reporting only aggregate accuracy, and discuss data, modeling, and deployment-time mitigation strategies for building equitable assessment systems suitable for use in real classrooms.
+
+
+This work was published in the Journal of Educational Measurement, and can be accessed <a href="https://doi.org/10.1111/jedm.12435"> here</a>
 

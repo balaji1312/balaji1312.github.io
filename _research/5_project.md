@@ -3,7 +3,7 @@ layout: page
 title: Encoder Only Non-autoregressive ASR 
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
-importance: 7
+importance: 8
 category: lab
 ---
 

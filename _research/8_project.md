@@ -3,9 +3,36 @@ layout: page
 title: Improving ASR for Child Speech
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
-importance: 6
+importance: 1
 category: lab
 ---
+
+Parameter-efficient fine-tuning methods such as Low-Rank Adaptation (LoRA) make it cheap to adapt speech foundation models to new domains, but they modify only the global attention mechanism and miss the local acoustic context that often defines a mismatched domain. This work proposes GC-LoRA, an adapter that injects Conformer-style local convolutional processing into a pretrained Transformer encoder by attaching a lightweight module to the encoder's attention output projections. The adapter captures local acoustic dependencies — reverberation, telephony band-limiting, dialectal variation, and the physiological characteristics of child speech — without disrupting the model's pretrained global representations. Across acoustically degraded, bandlimited, dialectal, and child speech datasets, GC-LoRA achieves Word Error Rate reductions of up to 10.9% over baselines while adding minimal trainable parameters.
+
+
+This work has been accepted at Interspeech 2026.
+
+
+The code can be accessed <a href="https://github.com/balaji1312/gc_lora"> here</a>
+
+
+A complementary line of work asks which layers of a speech foundation model should be adapted, rather than how. Gumbel-BEARD is a domain adaptation framework that automates Whisper encoder layer selection through an end-to-end trainable hard Gumbel-Softmax selector, paired with a BEST-RQ self-supervised objective so the model adapts to target acoustic characteristics without manual tuning or transcribed data. On the MyST child speech corpus, fine-tuning with only 10 hours of labeled data matches a fully supervised baseline trained on the complete 133-hour set, and the method sets new state-of-the-art Word Error Rates of 8.21% (Whisper-medium on MyST) and 11.06% (Whisper-small on OGI Spontaneous). Evaluation on CORAAL further shows robustness to adult dialectal shifts, with up to 6% relative WER reduction.
+
+
+This work has been accepted at Interspeech 2026.
+
+
+Moving from single-model adaptation to unified multi-domain recognition, a related effort proposes a Mixture-of-Experts (MoE) Speech-LLM that handles adult and child speech across diverse environments and age groups within a single system. A classifier-based domain router follows a coarse-to-fine strategy and combines a Mixture-of-Projectors and a Mixture-of-LoRAs to model domain-specific variation, while an entropy-aware routing mechanism dynamically falls back to a shared expert when the router is uncertain near domain boundaries. Experiments on public child corpora show consistent improvements over baselines while preserving adult ASR performance; to our knowledge, this is the first work to use Speech-LLMs for unified, multi-domain ASR spanning both children and adults.
+
+
+This work has been accepted at Interspeech 2026.
+
+
+We also study discrete speech tokenization for child ASR, where representing speech as compact discrete tokens enables storage efficiency and integration with large language models. Discrete tokens are typically split into acoustic and semantic varieties, with semantic tokens being more useful for recognition. This work systematically compares the traditional unsupervised approach (K-means clustering over speech foundation model features) against supervised tokenization (finite scalar quantization trained with an ASR loss). Supervised semantic tokens not only outperform unsupervised ones but unexpectedly surpass even continuous representations, and they remain effective in ultra-low bitrate settings — offering practical guidance for discrete speech tokenization in low-resource tasks like child ASR.
+
+
+This work was presented at the AI4CSL workshop at ASRU 2025, and can be accessed <a href="https://arxiv.org/abs/2512.03301"> here</a>
+
 
 Speech foundation models finetuned on certain domains, such as LibriSpeech (adult read speech), behave poorly on other domains (child or noisy speech). One solution could be collecting as much labelled data as possible for joint finetuning on various domains. However, collecting target domain speech-text paired data and retraining the model is often costly and computationally expensive. In this paper, we introduce a simple yet effective method, speech-only adaptation (SOA), based on speech foundation models (Wav2vec 2.0), which requires only speech input data from the target domain. Specifically, the Wav2vec feature encoder is continually pretrained with the Wav2vec loss on both the source and target domain data for domain adaptation, while the contextual encoder is frozen. Compared to a source-domain finetuned model with the feature encoder being frozen during training, we find that simply replacing the frozen feature encoder with the adapted one provides significant WER improvements to the target domain while preserving the performance of the source domain. The effectiveness of this SOA is examined on various low-resource or domain-mismatched ASR settings including adult-child and clean-noisy speech.
 

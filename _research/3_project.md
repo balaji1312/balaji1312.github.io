@@ -3,7 +3,7 @@ layout: page
 title: Contrast Enhancement in Color Fundus Images 
 description: Work with Signal and Image Processing Laboratory at NIT Trichy
 img: 
-importance: 10
+importance: 11
 category: lab
 ---
 
