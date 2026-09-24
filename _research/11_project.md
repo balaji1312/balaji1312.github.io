@@ -3,7 +3,7 @@ layout: page
 title: The JIBO Kids Corpus
 description: Work with Speech Processing and Auditory Perception Lab at UCLA
 img: 
-importance: 6
+importance: 7
 category: lab
 ---
 

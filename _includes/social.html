@@ -28,6 +28,9 @@
             {%- if site.linkedin_username -%}
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             {% endif %}
+            {%- if site.huggingface_username -%}
+            <a href="https://huggingface.co/{{ site.huggingface_username }}" title="Hugging Face" class="hf-link">{% include icons/huggingface.svg %}</a>
+            {% endif %}
             {%- if site.twitter_username -%}
             <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter"><i class="fab fa-twitter"></i></a>
             {% endif %}

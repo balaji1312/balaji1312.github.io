@@ -264,6 +264,17 @@ blockquote {
           color: var(--global-theme-color);
         }
       }
+      // Hugging Face has no icon-font glyph; the inline SVG follows the same colors.
+      .hf-icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.125em;
+        color: var(--global-text-color);
+        transition: color 0.2s ease-in-out;
+      }
+      &:hover .hf-icon {
+        color: var(--global-theme-color);
+      }
     }
   }
   .contact-note {
